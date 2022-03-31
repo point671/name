@@ -1,0 +1,405 @@
+@import "_mixins";
+
+
+@import url("stylesheet.css");
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import "_null";
+
+body {
+	line-height: 1;
+	color: black;
+	background-color: #1E456E;
+	font-family: "Roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ------------------------------ */
+
+// Основной цвет
+$main: green;
+
+/* ------------------------------ */
+
+.main {
+	flex-grow: 1;
+	display: flex;
+}
+._ibg {
+	position: relative;
+	img {
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.background{
+	background-color: white;
+	flex: 0 1 97%;
+	margin: 0px auto;
+	margin-bottom: 156px;
+}
+.title{
+	display: flex;
+	flex-direction: column;
+	&__contact{
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 105px;
+		margin-right: 200px;
+		font-family: "Brick Display Pro";
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 35px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 63px;
+		color: #1E456E;
+	}
+}
+
+
+
+
+.title__container {
+	margin-bottom: 156px;
+	max-width: 97%;
+}
+
+
+.matilde{
+	display: flex;
+	column-gap: 58px;
+}
+.pay{
+	display: flex;
+	flex-direction: column;
+	&__pay{
+		
+	}
+
+	&__wrap-img{
+		width: 468px;
+		height: 656px;
+		margin-bottom: 42px;
+	}
+	&__img {
+
+	}
+	
+	&__button{
+		font-family: "Brick Text Pro";
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0em;
+		text-align: left;
+
+
+		padding: 16px 82px;
+		color: white;
+
+
+	}
+	&__button_blue{
+		background-color: #569DDD;
+		margin-bottom: 23px;
+	}
+	&__button_white{
+		color: #2A5285;
+		border: solid 2px;
+		margin-bottom: 114px;
+	}
+}
+
+.card{
+	&__title{
+		font-family: "Brick Display Pro";
+		font-size: 38px;
+		font-weight: 400;
+		line-height: 46px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: white;
+		margin-bottom: 95px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.text {
+	color:#1E456E;
+	&__title{
+	font-family: "Brick Display Pro";
+	font-size: 44px;
+	font-weight: 900;
+	line-height: 53px;
+	letter-spacing: 0em;
+	text-align: left;
+	}
+
+	&__title:not(:last-child){
+		margin-bottom: 30px;
+	}
+
+	&__txt{
+		font-family: "Brick Display Pro";
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 35px;
+	}
+
+	.text__title_one{
+		margin-bottom: 45px;
+	}
+
+}
+.text__block {
+}
+.text__title {
+}
+.text__title_one {
+}
+.text__txt {
+}
+.text__two {
+}
+
+
+
+
+
+
+
+
+
+
+.card {
+
+}
+.card__container {
+}
+.card__title {
+}
+.card__image {
+}
+
+
+.image-card {
+ display: flex;
+ column-gap: 32px;
+ margin-bottom: 185px;
+ &__image-wrap{
+	 width: 518px;
+	 height: 727px;
+ }
+
+
+}
+.image-card__image-wrap {
+}
+.image-card__img {
+}
+
+
+.matilde__pay{
+	margin-left: 150px;
+}
+
+
+
+
+
+// Миксин IBG
+@mixin ibg($position: center) {
+	position: relative;
+	img {
+		object-fit: cover;
+		object-position: $position;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+/* Условные ПК, ноуты и телевизоры */
+/* 1050 из макета (контейнер + отступы) */
+@media (max-width: 1050px) {
+}
+/* Условные планшеты */
+@media (max-width: 957px) {
+	.matilde{
+		flex-direction: column;
+	}
+	.pay__button{
+		
+		max-width: 468px;
+	}
+}
+/* Условные мобилки */
+@media (max-width: 767.98px) {
+}
+
+[class*="__container"] {
+	max-width: 1610px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	
+}
+
+
+/* №1 */
+@media (max-width: 1440px) {
+	[class*="__container"] {
+		/* max-width: 970px; */
+	}
+	.image-card{
+		column-gap: 1%;
+	}
+
+}
+/* №2 */
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		/* max-width: 750px; */
+	}
+}
+/* №3 */
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		/* max-width: none; */
+	}
+	.image-card{
+		flex-wrap: wrap;
+		row-gap: 5px;
+	}
+	
+}
+
+// .block {
+// 	// .block__container
+// 	&__container {
+
+// 	}
+// 	// .block__items
+// 	&__items {
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		row-gap: 30px;
+// 		margin: 0px -15px;
+// 	}
+// 	// .block__item
+// 	&__item {
+// 		padding: 0px 15px;
+// 		flex: 1 1 33.333%;
+// 		min-width: 290px;
+// 	}
+// }
+.item-block {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	@media (min-width: 1140px) {
+		max-width: 350px;
+	}
+	// .item-block__picture
+	&__picture {
+		@include ibg(top);
+		padding: 0px 0px 74.28571428571429% 0px;
+	}
+	// .item-block__image
+	&__image {
+	}
+	// .item-block__body
+	&__body {
+		flex: 1 1 auto;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(66, 66, 66);
+		*:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .item-block__title
+	&__title {
+		font-size: 40px;
+		color: #fff;
+	}
+	// .item-block__text
+	&__text {
+		line-height: 150%;
+		color: #eee;
+		flex: 1 1 auto;
+		font-size: 16px;
+	}
+	// .item-block__button
+	&__button {
+		padding: 10px 15px;
+		text-align: center;
+		color: #fff;
+		@include theme(green);
+		&::before {
+			content: "";
+		}
+		&::after {
+			content: "";
+		}
+		&:hover {
+			background-color: yellow;
+		}
+		.loading & {
+		}
+	}
+}
+
+.list {
+	padding: 30px;
+	// .list__item
+	&__item {
+		transform: translate(-100%, 0px);
+		transition: 0.3s;
+
+		//@for $var from 1 to 5 {
+		//	$delay: 0.1 * $var;
+		//	&:nth-child(#{$var}) {
+		//		transition-delay: $delay + s;
+		//	}
+		//}
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+	// .list__link
+	&__link {
+		color: #fff;
+	}
+	&:hover {
+		.list__item {
+			transform: translate(0px, 0px);
+		}
+	}
+}

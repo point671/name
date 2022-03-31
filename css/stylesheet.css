@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Brick Text Pro';
+    src: url('BrickTextPro-Medium.eot');
+    src: local('Brick Text Pro Medium'), local('BrickTextPro-Medium'),
+        url('BrickTextPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BrickTextPro-Medium.woff2') format('woff2'),
+        url('BrickTextPro-Medium.woff') format('woff'),
+        url('BrickTextPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brick Display Pro';
+    src: url('BrickDisplayPro-Black.eot');
+    src: local('Brick Display Pro Black'), local('BrickDisplayPro-Black'),
+        url('BrickDisplayPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('BrickDisplayPro-Black.woff2') format('woff2'),
+        url('BrickDisplayPro-Black.woff') format('woff'),
+        url('BrickDisplayPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brick Display Pro';
+    src: url('BrickDisplayPro-Regular.eot');
+    src: local('Brick Display Pro Regular'), local('BrickDisplayPro-Regular'),
+        url('BrickDisplayPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BrickDisplayPro-Regular.woff2') format('woff2'),
+        url('BrickDisplayPro-Regular.woff') format('woff'),
+        url('BrickDisplayPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brick Display Pro';
+    src: url('BrickDisplayPro-Medium.eot');
+    src: local('Brick Display Pro Medium'), local('BrickDisplayPro-Medium'),
+        url('BrickDisplayPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BrickDisplayPro-Medium.woff2') format('woff2'),
+        url('BrickDisplayPro-Medium.woff') format('woff'),
+        url('BrickDisplayPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brick Text Pro';
+    src: url('BrickTextPro-Regular.eot');
+    src: local('Brick Text Pro Regular'), local('BrickTextPro-Regular'),
+        url('BrickTextPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BrickTextPro-Regular.woff2') format('woff2'),
+        url('BrickTextPro-Regular.woff') format('woff'),
+        url('BrickTextPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brick Text Pro';
+    src: url('BrickTextPro-Black.eot');
+    src: local('Brick Text Pro Black'), local('BrickTextPro-Black'),
+        url('BrickTextPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('BrickTextPro-Black.woff2') format('woff2'),
+        url('BrickTextPro-Black.woff') format('woff'),
+        url('BrickTextPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
